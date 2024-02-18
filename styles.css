@@ -1,0 +1,39 @@
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+    body {
+      margin: 30px;
+    }
+   
+   
+    .selected {
+      -webkit-animation: bgcolorchange 4s infinite; /* Chrome, Safari, Opera */ 
+  animation: 4s infinite bgcolorchange;
+}
+@keyframes bgcolorchange {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+/* Chrome, Safari, Opera */
+ @-webkit-keyframes bgcolorchange {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      75%  {background: green;}
+      100% {background: blue;}
+ }
+ 
+   
